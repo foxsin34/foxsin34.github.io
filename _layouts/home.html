@@ -1,0 +1,20 @@
+---
+layout: default
+---
+
+<div class="posts">
+	<h2>Recent Post</h2>
+{% for post in paginator.posts %}
+	<a class="title" href="{{ post.url }}">{{ post.title }}</a>
+	<p>{{ post.excerpt }}</p>
+	<a href="{{ post.url }}">More >></a>
+
+{% endfor %}
+	
+<!-- 	<tr>
+		<td><</td>
+		<td>{{ paginator.total_pages }}</td>
+		<td>></td>
+	</tr> -->
+	
+</div>
